@@ -1,0 +1,11 @@
+com/gcit/lms/dao/AuthorDAO.class
+com/gcit/lms/helper/Authorhelper.class
+com/gcit/lms/entity/Author.class
+com/gcit/lms/entity/Book.class
+com/gcit/lms/WebConfig.class
+com/gcit/lms/dao/AuthorDAO$1.class
+com/gcit/lms/entity/Genre.class
+com/gcit/lms/controller/AuthorController.class
+com/gcit/lms/dao/BaseDAO.class
+com/gcit/lms/entity/Publisher.class
+com/gcit/lms/LmsApplication.class
