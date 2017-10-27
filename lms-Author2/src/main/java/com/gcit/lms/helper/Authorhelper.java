@@ -83,7 +83,7 @@ public class Authorhelper {
     @SuppressWarnings("unchecked")
 	public  List<Book> readAllBooksByAuthor(int id)
     {
-        final String uri = "http://54.165.253.198:8091/books/author/"+id+".json";
+        final String uri = "http://54.237.148.87:8091/books/author/"+id+".json";
         
         RestTemplate restTemplate = new RestTemplate();
          
