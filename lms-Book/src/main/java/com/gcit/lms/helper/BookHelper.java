@@ -99,7 +99,7 @@ public class BookHelper {
     @SuppressWarnings("unchecked")
   	public  List<Author> readAuthorsByBook(int id)
       {
-          final String uri = "http://54.174.42.124:8090/authors/book/"+id+".json";
+          final String uri = "http://52.91.158.36:8090/authors/book/"+id+".json";
           
           RestTemplate restTemplate = new RestTemplate();
            
@@ -109,7 +109,7 @@ public class BookHelper {
     @SuppressWarnings("unchecked")
   	public  List<Genre> readGenresByBook(int id)
       {
-          final String uri = "http://localhost:8094/genres/book/"+id+".json";
+          final String uri = "http://52.91.158.36:8094/genres/book/"+id+".json";
           
           RestTemplate restTemplate = new RestTemplate();
            
@@ -118,7 +118,7 @@ public class BookHelper {
       }
   	public  Publisher readPublisher(int id)
       {
-          final String uri = "http://localhost:8093/publisher/"+id+".json";
+          final String uri = "http://52.91.158.36:8093/publisher/"+id+".json";
           
           RestTemplate restTemplate = new RestTemplate();
           Publisher pub =  restTemplate.getForObject(uri, Publisher.class);
@@ -126,13 +126,13 @@ public class BookHelper {
       }
   	public void deleteBookAuthor(int authorId,int bookId)
       {
-          final String uri = "http://54.174.42.124:8090/author/"+authorId+"/book/"+bookId+"/delete.json";
+          final String uri = "http://52.91.158.36:8090/author/"+authorId+"/book/"+bookId+"/delete.json";
           RestTemplate restTemplate = new RestTemplate();
           restTemplate.delete(uri,authorId,bookId); 
       }
 	public void deleteBookGenre(int genreId,int bookId)
     {
-        final String uri = "http://localhost:8094/genre/"+genreId+"/book/"+bookId+"/delete.json";
+        final String uri = "http://52.91.158.36:8094/genre/"+genreId+"/book/"+bookId+"/delete.json";
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.delete(uri); 
     }
