@@ -73,7 +73,7 @@ public class Genrehelper {
 	 @SuppressWarnings("unchecked")
 		public  List<Book> readAllBooksByGenre(int id)
 	    {
-	        final String uri = "http://localhost:8091/books/genre/"+id+".json";
+	        final String uri = "http://52.91.158.36:8091/books/genre/"+id+".json";
 	        
 	        RestTemplate restTemplate = new RestTemplate();
 	         
