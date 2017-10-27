@@ -43,7 +43,7 @@ public class PublisherHelper {
 	 @SuppressWarnings("unchecked")
 		public  List<Book> readAllBooksByPublisher(int id)
 	    {
-	        final String uri = "http://localhost:8091/books/publisher/"+id+".json";
+	        final String uri = "http://52.91.158.36:8091/books/publisher/"+id+".json";
 	        RestTemplate restTemplate = new RestTemplate();
 	        return (List<Book>)restTemplate.getForObject(uri, Object.class);   
 	    }
