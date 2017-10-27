@@ -99,7 +99,7 @@ public class BookHelper {
     @SuppressWarnings("unchecked")
   	public  List<Author> readAuthorsByBook(int id)
       {
-          final String uri = "http://54.237.148.87:8090/authors/book/"+id+".json";
+          final String uri = "http://54.174.42.124:8090/authors/book/"+id+".json";
           
           RestTemplate restTemplate = new RestTemplate();
            
@@ -126,7 +126,7 @@ public class BookHelper {
       }
   	public void deleteBookAuthor(int authorId,int bookId)
       {
-          final String uri = "http://54.237.148.87:8090/author/"+authorId+"/book/"+bookId+"/delete.json";
+          final String uri = "http://54.174.42.124:8090/author/"+authorId+"/book/"+bookId+"/delete.json";
           RestTemplate restTemplate = new RestTemplate();
           restTemplate.delete(uri,authorId,bookId); 
       }
